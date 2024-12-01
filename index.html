@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Галерея товаров</h1>
+        <div class="filters">
+            <button data-category="all">Все</button>
+            <button data-category="electronics">Электроника</button>
+            <button data-category="clothing">Одежда</button>
+            <button data-category="toys">Игрушки</button>
+        </div>
+    </header>
+    <main>
+        <div id="gallery" class="gallery"></div>
+    </main>
+
+    <div id="subscribe-popup" class="subscribe-popup">
+        <p>Подпишитесь на наши уведомления!</p>
+        <button id="subscribe-accept">Принять</button>
+        <button id="subscribe-decline">Отклонить</button>
+    </div>
+
+    <div id="ad-modal" class="modal hidden">
+        <div class="modal-content">
+            <p>Реклама: купите наши товары со скидкой!</p>
+            <button id="close-modal" disabled>Закрыть (<span id="timer">5</span>)</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
